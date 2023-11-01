@@ -1,21 +1,21 @@
 import { Fragment } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const Service = () => {
     return (
         <Fragment>
             <div className="container">
                 <ul>
-                <Link
-                    to="/home"
+                <a
+                    href="/home"
                     >
                         Home
-                </Link>;
-                <Link
-                    to="/service"
+                </a>;
+                <a
+                    href="/service"
                     >
                         service
-                </Link>;
+                </a>;
 
                 </ul>
             </div>
