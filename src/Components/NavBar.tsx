@@ -1,21 +1,21 @@
 import { Fragment } from "react";
-import {  NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Service = () => {
     return (
         <Fragment>
             <div className="container">
                 <ul>
-                <NavLink
+                <Link
                     to="/home"
                     >
                         Home
-                </NavLink>;
-                <NavLink
+                </Link>;
+                <Link
                     to="/service"
                     >
                         service
-                </NavLink>;
+                </Link>;
 
                 </ul>
             </div>
