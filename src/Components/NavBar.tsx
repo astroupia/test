@@ -1,16 +1,14 @@
-import { Fragment } from "react";
-import { ReloadLink } from "./";
-// import { Link } from "react-router-dom";
+import { BrowserRouter as Router} from "react-router-dom";
+import { Link }from "react-router-dom";
 
 const Service = () => {
     return (
-        <Fragment>
+        <Router>
             <div className="container">
-                <ReloadLink to="./home">Home</ReloadLink>
-                <ReloadLink to="./service">Service</ReloadLink>
-
+                <Link to="./home">Home</Link>
+                <Link to="./service">Service</Link>
             </div>
-        </Fragment>
+        </Router>
     )
 };
 

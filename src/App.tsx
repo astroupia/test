@@ -1,8 +1,5 @@
-import { 
-  Home,
-  NavBar,
-  Service } from "./Components";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { NavBar } from "./Components";
+import SydekRouter from "./SydekRouter";
 import './App.css'
 
 function App() {
@@ -10,13 +7,7 @@ function App() {
   return (
     <>
       <NavBar />
-      <Router>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/service" element={<Service />} />
-        </Routes>
-      </Router>
+      <SydekRouter />
     </>
   )
 }
