@@ -1,12 +1,10 @@
-import { NavBar } from "./Components";
 import SydekRouter from "./SydekRouter";
 import './App.css'
 
-function App() {
 
+function App() {
   return (
     <>
-      <NavBar />
       <SydekRouter />
     </>
   )

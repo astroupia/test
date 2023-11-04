@@ -2,15 +2,42 @@ import {
     Home,
     Service
 } from "./Components";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { Route, BrowserRouter as Router, Routes, Link } from "react-router-dom";
+import { Fragment } from "react";
+
+// const router = createBrowserRouter([
+//     {
+//       path: "/",
+//       element: <App
+//        />,
+//       children: [
+//       {
+//         path: "/",
+//         element: <Home />
+//       },
+//       {
+//         path: "service",
+//         element: <Service />
+//       },
+//     ]
+//     }
+//   ])
 
 const SydekRouter = () => {
     return (
+      <Fragment>
         <Router>
-                <Route exact path="/" element={<Home />} />
-                <Route path="/home" element={<Home />} />
-                <Route path="/service" element={<Service />} />
+        <div className="container">
+                <Link to="./home">Home</Link>
+                <Link to="./service">Service</Link>
+        </div>
+        <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/service" element={<Service />} />
+        </Routes>
         </Router>
+      </Fragment>
     )
 };
 
